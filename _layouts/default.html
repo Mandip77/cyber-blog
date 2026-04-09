@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="{{ '/' | relative_url }}" class="logo">
+                <span class="logo-icon">&gt;_</span>
+                M.A. <span class="highlight">Labs</span>
+            </a>
+            <div class="nav-links">
+                <a href="https://man-dip.dev/" class="nav-link">Main Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% if page.url == '/' %}
+            <!-- Custom Homepage Hero -->
+            <div class="hero">
+                <h1>Cybersecurity Research</h1>
+                <p>Welcome! I'm Mandip Amgain, an IT student at Northeastern specializing in <strong>Penetration Testing</strong> and <strong>AI Governance</strong>.</p>
+            </div>
+        {% elsif page.title %}
+            <!-- Post Header -->
+            <header class="post-header">
+                <h1>{{ page.title }}</h1>
+                {% if page.date %}
+                <p class="meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: "%b %-d, %Y" }}
+                    </time>
+                    {% if page.categories %} • [{% for cat in page.categories %}{{ cat }}{% if forloop.last == false %}, {% endif %}{% endfor %}]{% endif %}
+                </p>
+                {% endif %}
+            </header>
+        {% endif %}
+
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <p>Cybersecurity Research &copy; {{ site.time | date: "%Y" }} Mandip Amgain. <br> <span class="highlight">Securing the digital frontier.</span></p>
+    </footer>
+</body>
+</html>
