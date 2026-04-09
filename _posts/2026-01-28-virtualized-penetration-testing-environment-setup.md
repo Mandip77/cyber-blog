@@ -38,4 +38,4 @@ Basic functionality was verified by confirming system boot, IP address assignmen
 ## Conclusion
 This virtual lab provides a controlled environment for learning penetration testing techniques while maintaining safety and isolation. The design mirrors real-world enterprise networks and supports future security testing exercises.
 
-[Download Full Report Environment Setup (DOCX)]({{ site.baseurl }}/assets/documents/Virtualized%20Penetration%20Testing%20Environment%20Setup.docx)
+

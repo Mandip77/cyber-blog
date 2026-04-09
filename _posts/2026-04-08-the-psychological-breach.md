@@ -75,4 +75,4 @@ As we look toward 2027, we predict the rise of Autonomous Social Engineering Bot
 ## IX. Conclusion
 Social engineering is the most "human" problem in technology. While technical controls are necessary, they are insufficient against an adversary that hacks the heart and mind. To survive the AI-driven threat landscape, our defense must be as adaptive as our attackers, relying on a culture of Verified Skepticism and a relentless commitment to security education.
 
-[Download Full Report The Psychological Breach (DOCX)]({{ site.baseurl }}/assets/documents/The%20Psychological%20Breach.docx)
+

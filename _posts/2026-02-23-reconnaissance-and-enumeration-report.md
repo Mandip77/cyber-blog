@@ -73,4 +73,4 @@ A significant portion of the reconnaissance phase involved resolving environment
 ## 6. Conclusion
 The reconnaissance phase successfully mapped the internal lab environment. By combining passive DNS queries with active Nmap scans and banner grabbing, a detailed list of vulnerable services was established for further exploitation testing.
 
-[Download Full Report Assignment 2 (DOCX)]({{ site.baseurl }}/assets/documents/Assignment2.docx)
+

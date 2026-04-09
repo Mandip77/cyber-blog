@@ -96,4 +96,4 @@ Because open networks have no password, a hacker could sit nearby and intercept 
 * **Change the Name**: Use generic names instead of ISP defaults.
 * **Turn off WPS**: It’s actually a "back door" that hackers can easily kick open.
 
-[Download Full Report Exploring Wardriving (DOCX)]({{ site.baseurl }}/assets/documents/Exploring%20Wardriving.docx)
+
